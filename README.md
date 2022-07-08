@@ -1,5 +1,5 @@
 # San Diego ZooSeeker
-A companion app for the San Diego Zoo that lets you select different exhibits and plan a customized itinerary for your trip using real-time location detection.
+A companion Android app for the San Diego Zoo that lets you select different exhibits and plan a customized itinerary for your trip using real-time location detection.
 
 <h2>Features</h2>
 
@@ -10,7 +10,7 @@ A search bar is implemented to facilitate the selection process, equipped with b
 Once the user finishes selecting their desired exhibits and hits the plan button, a shortest path algorithm (modified Dijkstra) is run on a graph that represents the entire zoo. It calculates the most efficient route that hits all the selected exhibits and returns a list. The list is then displayed as a preview and is ordered from nearest to farthest.
 
 <h3>Detailed Directions</h3>
-After the user confirms that their plan looks ideal, a carousel is quickly made behind the scenes to display directions, each card for one exhibit. The app also utilizes live user location using the <a href="https://developers.google.com/maps/documentation/android-sdk/overview">Maps API</a> to display accurate directions to the respective exhibit. Another feature that we implemented was off track suggestions; this accounts for the case where if the user goes too far away from the next exhibit to the point where there's a different exhibit that's closer, the app prompts for a route replan. In addition to that, there is also a skip feature where the user can directly skip an exhibit in the middle of the trip if they feel like it.
+After the user confirms that their plan looks ideal, a carousel is quickly made behind the scenes to display directions, each card for one exhibit. The app also utilizes live user location using the <a href="https://developers.google.com/maps/documentation/android-sdk/overview"><i>Maps API</i></a> to display accurate directions to the respective exhibit. Another feature that we implemented was off track suggestions; this accounts for the case where if the user goes too far away from the next exhibit to the point where there's a different exhibit that's closer, the app prompts for a route replan. In addition to that, there is also a skip feature where the user can directly skip an exhibit in the middle of the trip if they feel like it.
 
 <h3>Miscellaneous</h3>
 Some other minor features include app persistence, toggling between brief and detailed directions, and including entrance/exit gate automatically during route calculations.
